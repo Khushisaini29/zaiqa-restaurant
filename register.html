@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account · Zaiqa — Modern Indian Kitchen</title>
+<meta name="description" content="Join the Zaiqa family — faster bookings, saved favourites and members-only thalis.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%231a1409'/%3E%3Cpath d='M24 8c3 6 9.5 8 9.5 15.5 0 6-4.4 10-9.5 10s-9.5-4-9.5-10C14.5 16 21 14 24 8z' fill='%23c99a3f'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="Zaiqa — home">
+      <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <defs><linearGradient id="lg" x1="12" y1="4" x2="36" y2="34"><stop stop-color="#e6c476"/><stop offset="1" stop-color="#b8863a"/></linearGradient></defs>
+        <path d="M24 4c3.5 7 11 9.3 11 18.2C35 29.5 30 34 24 34s-11-4.5-11-11.8C13 13.3 20.5 11 24 4z" fill="url(#lg)"/>
+        <path d="M24 15.5c1.5 3.1 4.6 4.3 4.6 8.4a4.6 4.6 0 1 1-9.2 0c0-4.1 3.1-5.3 4.6-8.4z" fill="#1a1409"/>
+        <path d="M14 40h20" stroke="#c99a3f" stroke-width="2.6" stroke-linecap="round"/>
+      </svg>
+      <span><span class="brand-name">ZAI<span>QA</span></span><span class="brand-tag">Modern Indian Kitchen</span></span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="nav-user" id="navUserSlot"></div>
+      <a href="cart.html" class="icon-btn" aria-label="Your order">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count">0</span>
+      </a>
+      <button class="hamburger" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-panel">
+  <a class="plink" href="index.html"><small>01</small>Home</a>
+  <a class="plink" href="about.html"><small>02</small>About</a>
+  <a class="plink" href="menu.html"><small>03</small>Menu</a>
+  <a class="plink" href="gallery.html"><small>04</small>Gallery</a>
+  <a class="plink" href="contact.html"><small>05</small>Contact</a>
+  <a class="plink" href="cart.html"><small>06</small>Your Order</a>
+  <div class="panel-foot"><span>+91 98120 45678</span><span>·</span><span>hello@zaiqa.in</span></div>
+</div>
+
+<main class="auth-wrap">
+  <aside class="auth-side">
+    <div class="as-bg"><img src="assets/img/seekh-kebab.jpg" alt=""></div>
+    <a href="index.html" class="hero-eyebrow" style="width:max-content">← Back to the restaurant</a>
+    <blockquote class="auth-quote">
+      “Members taste every new dish a fortnight before the menu does. Consider this your invitation to the pass.”
+      <span>— Chef Vikram Rathore</span>
+    </blockquote>
+  </aside>
+
+  <section class="auth-main">
+    <div class="auth-card">
+      <h1>Join the family</h1>
+      <p class="a-sub">One minute of paperwork for a lifetime of priority tables and secret menus.</p>
+
+      <form id="regForm" novalidate>
+        <div class="field" style="margin-bottom:16px">
+          <label for="rName">Full name <i>*</i></label>
+          <input id="rName" type="text" placeholder="Aarav Sharma" autocomplete="name">
+          <span class="f-msg"></span>
+        </div>
+        <div class="field" style="margin-bottom:16px">
+          <label for="rEmail">Email address <i>*</i></label>
+          <input id="rEmail" type="email" placeholder="you@example.com" autocomplete="email">
+          <span class="f-msg"></span>
+        </div>
+        <div class="field" style="margin-bottom:16px">
+          <label for="rPhone">Mobile <span style="text-transform:none; letter-spacing:0; color:var(--muted); font-weight:600">(optional)</span></label>
+          <input id="rPhone" type="tel" placeholder="98120 45678" autocomplete="tel">
+          <span class="f-msg"></span>
+        </div>
+        <div class="field" style="margin-bottom:16px">
+          <label for="rPass">Password <i>*</i></label>
+          <div class="pw-wrap">
+            <input id="rPass" type="password" placeholder="Minimum 6 characters" autocomplete="new-password">
+            <button type="button" class="pw-eye" aria-label="Show password">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </button>
+          </div>
+          <div class="strength" id="pwBars"><i></i><i></i><i></i><i></i></div>
+          <small id="pwHint" style="font-size:.78rem; color:var(--muted); margin-top:6px">Use 6+ characters with a mix of cases & numbers.</small>
+          <span class="f-msg"></span>
+        </div>
+        <div class="field" style="margin-bottom:18px">
+          <label for="rPass2">Confirm password <i>*</i></label>
+          <input id="rPass2" type="password" placeholder="Repeat it once more" autocomplete="new-password">
+          <span class="f-msg"></span>
+        </div>
+        <div class="field" style="margin-bottom:24px">
+          <label class="check-row" for="rTerms">
+            <input id="rTerms" type="checkbox">
+            <span>I agree to the <a href="#!">house rules</a> and to occasionally dreaming about your dal makhani.</span>
+          </label>
+          <span class="f-msg"></span>
+        </div>
+        <button class="btn btn-gold btn-block" type="submit">Create my account</button>
+      </form>
+
+      <p class="auth-switch">Already family? <a href="login.html">Sign in instead</a>.</p>
+    </div>
+  </section>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
